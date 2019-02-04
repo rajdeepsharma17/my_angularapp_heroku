@@ -17,6 +17,6 @@ app.get('/*', (req, res)=>{
     res.sendFile(__dirname+'/dist/index.html')
 });
 
-app.listen(3000, ()=>{
+app.listen(process.env.PORT || 3000, ()=>{
     console.log("Server has started");
 });
